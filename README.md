@@ -1,2 +1,3 @@
 # see-sharp
-c# from start to finish tutorial by Tim Corey
+A simple todo app using dotnet framework and entity framework core
+It covers the basic CRUD operations following RESTful APIs
