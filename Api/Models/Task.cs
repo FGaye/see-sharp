@@ -7,8 +7,8 @@ namespace Api.Models
 {
     public class Task
     {
-        int Id;
-        string Name;
-        string Description;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

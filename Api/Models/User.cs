@@ -7,10 +7,11 @@ namespace Api.Models
 {
     public class User
     {
-        int Id;
-        string Name;
-        string Email;
-        string Password;
-        List<Task> Tasks;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public int TaskId { get; set; }
+        public List<Task> Tasks { get; set; }
     }
 }
