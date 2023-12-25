@@ -1,5 +1,6 @@
 using Api.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -8,6 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
     // add connection string
   builder.Services.AddDbContext<TodoAppContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    builder.Services.AddSwaggerGen(c =>
+    {
+        c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+    });
+
 
 }
 
